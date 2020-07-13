@@ -62,26 +62,23 @@
                         <div class="col-9">
                             <pre>
                                 <code class="language-js">
-                                    
-                                        $("#btnPal").on("click", function () {
-                                            let word = $("#input1").val().toLowerCase();
-                                            let reversedWord = word.split("").reverse().join("");
+$("#btnPal").on("click", function () {
+    let word = $("#input1").val().toLowerCase();
+    let reversedWord = word.split("").reverse().join("");
 
-                                            if (word === reversedWord) {
-                                                $("#output1").html(`The word <span class="palindrome">"${word}"</span> is a palindrome.`);
-                                            }
-                                            else {
-                                                $("#output1").html(`The word <span class="notPalindrome">"${word}"</span> is NOT a palindrome.`);
-                                            }
+    if (word === reversedWord) {
+        $("#output1").html(`The word <span class="palindrome">"${word}"</span> is a palindrome.`);
+    }
+    else {
+        $("#output1").html(`The word <span class="notPalindrome">"${word}"</span> is NOT a palindrome.`);
+    }
 
-                                        })
+})
 
-                                        $("#btnClear").on("click", function () {
-                                            $("#input1").val("");
-                                            $("#output1").text("");
-                                        })
-                                    
-
+$("#btnClear").on("click", function () {
+    $("#input1").val("");
+    $("#output1").text("");
+})
                                 </code>
 </pre>
                         </div>
