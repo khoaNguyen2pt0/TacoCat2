@@ -52,43 +52,73 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">TacoCat</h1>
-                <p class="lead">Here is the code that makes it all work!</p>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-9">
-                            <pre>
-                                <code class="language-js">
-$("#btnPal").on("click", function () {
-    let word = $("#input1").val().toLowerCase();
-    let reversedWord = word.split("").reverse().join("");
+    <!--prism html-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="mt-5">Tacocat</h1>
+                    <p class="lead">here is the code that makes it all work!</p>               
+<pre class="line-numbers">
+    <code class="language-markup">
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col h1 text-center"&gt; Palindrome Finder&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr /&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-6"&gt;
+                &lt;input id="input1" class="txtWide" placeholder="What is the word?" /&gt;
+            &lt;/div&gt;
+            &lt;div class="col-6"&gt;
+                &lt;div id="output1" class="col"&gt; &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr /&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-6"&gt;
+                &lt;button id="btnPal" class="btn btn-primary txtWide"&gt; Work &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="col-6"&gt;
+                &lt;button id="btnClear" class="btn btn-warning txtWide"&gt; Clear &lt;/button&gt;
+            &lt;/div&gt;
 
-    if (word === reversedWord) {
-        $("#output1").html(`The word <span class="palindrome">"${word}"</span> is a palindrome.`);
-    }
-    else {
-        $("#output1").html(`The word <span class="notPalindrome">"${word}"</span> is NOT a palindrome.`);
-    }
-
-})
-
-$("#btnClear").on("click", function () {
-    $("#input1").val("");
-    $("#output1").text("");
-})
-                                </code>
+        &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
 </pre>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!--prism js-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+<pre class="line-numbers">
+<code class="language-js">
 
+    $("#btnpal").on("click", function () {
+    let word = $("#input1").val().tolowercase();
+    let reversedword = word.split("").reverse().join("");
 
+    if (word === reversedword) {
+        $("#output1").html(`the word <span class="palindrome">"${word}"</span> is a palindrome.`);
+    }
+    else {
+        $("#output1").html(`the word <span class="notpalindrome">"${word}"</span> is not a palindrome.`);
+    }
+
+    })
+    $("#btnclear").on("click", function () {
+    $("#input1").val("");
+    $("#output1").text("");
+    })
+
+</code>
+</pre>
+                </div>
+            </div>
+        </div>
+    
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
