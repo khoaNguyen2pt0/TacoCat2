@@ -72,6 +72,7 @@
     <Content Include="Index.html" />
     <Content Include="Scripts\prism.js" />
     <Content Include="Solve.html" />
+    <Content Include="tacocat.jpeg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
