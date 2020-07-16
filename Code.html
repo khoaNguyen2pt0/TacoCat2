@@ -13,20 +13,27 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="CSS/prism.css" rel="stylesheet" />
+    <style>
+        pre {
+            max-height: 32em;
+            max-width: 100%;
+            overflow: auto;
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
         <div class="container">
-            <a class="navbar-brand" href="/Index.html"> TacoCat </a>
+            <a class="navbar-brand" href="/Index.html"> TacoCat</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/Index.html">
                             Home
                         </a>
@@ -34,97 +41,147 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/Solve.html">Solve</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/Code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Git</a>
+                        <a class="nav-link" target="_blank" href="//github.com/khoaNguyen2pt0/TacoCat2.git">Git</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="//khoanguyen-coderfoundry.netlify.app/">Portfolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav>>
 
     <!-- Page Content -->
-    <!--prism html-->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 class="mt-5">Tacocat</h1>
-                    <p class="lead">here is the code that makes it all work!</p>               
-<pre class="line-numbers">
-    <code class="language-markup">
-    &lt;div class="container"&gt;
-        &lt;div class="row"&gt;
-            &lt;div class="col h1 text-center"&gt; Palindrome Finder&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;hr /&gt;
-        &lt;div class="row"&gt;
-            &lt;div class="col-6"&gt;
-                &lt;input id="input1" class="txtWide" placeholder="What is the word?" /&gt;
-            &lt;/div&gt;
-            &lt;div class="col-6"&gt;
-                &lt;div id="output1" class="col"&gt; &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;hr /&gt;
-        &lt;div class="row"&gt;
-            &lt;div class="col-6"&gt;
-                &lt;button id="btnPal" class="btn btn-primary txtWide"&gt; Work &lt;/button&gt;
-            &lt;/div&gt;
-            &lt;div class="col-6"&gt;
-                &lt;button id="btnClear" class="btn btn-warning txtWide"&gt; Clear &lt;/button&gt;
-            &lt;/div&gt;
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mt-5">FizzBuzz</h1>
+                <p class="lead">Here is the code that makes it all work!</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <pre class="line-numbers">
+                            <code class="language-markup">
+&lt;body&gt;
 
-        &lt;/div&gt;
+&lt;div class="container" &gt;
+&lt;div class="row"&gt;
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-10 h1 text-center"&gt; FIZZBUZZ &lt;/div&gt;
     &lt;/div&gt;
-    </code>
+&lt;/div&gt;
+
+
+&lt;br /&gt;
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-2"&gt;&lt;/div&gt;
+        &lt;div class="col-4 text-left txtWide"&gt; Enter Fizz number: &lt;/div&gt;
+        &lt;div class="col-4 text-left txtWide"&gt; &lt;input id="input1" /&gt;&lt;/div&gt;
+        &lt;div class="col-2"&gt;&lt;/div&gt;
+        &lt;br /&gt;
+    &lt;/div&gt;
+
+    &lt;br /&gt;
+
+    &lt;div class="row"&gt;
+        &lt;div class="col-2"&gt;&lt;/div&gt;
+        &lt;div class="col-4 text-left txtWide"&gt; Enter Buzz number: &lt;/div&gt;
+        &lt;div class="col-4 text-left txtWide"&gt; &lt;input id="input2" /&gt;&lt;/div&gt;
+        &lt;div class="col-2"&gt;&lt;/div&gt;
+        &lt;br /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;h1&gt; &lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="container-md"&gt;
+    &lt;div class="row"&gt;
+        &lt;button id="btn1" class="btn btn-primary btn-block txtWide" onclick="buzzIt()"&gt;
+        Buzz It &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-12 txtWide"&gt;
+            &lt;h4 id="output1"&gt;&lt;/h4&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;                                                                                                    
+&lt;/body&gt;
+
+                               
+
+
+                                </code>
 </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <pre class="line-numbers">
+                            <code class="language-js">
+                                 
+<script>
+    function FizzBuzz(value1, value2) {
+        let returnValue = "";
+        for (let i = 1; i <= 100; i++) {
+            if (i % value1 == 0 && i % value2 == 0) {
+                returnValue += "FIZZBUZZOOKAH ";
+            }
+            else if (i % value1 == 0) {
+                returnValue += "fizz ";
+            }
+            else if (i % value2 == 0) {
+                returnValue += "buzz ";
+            }
+            else {
+                returnValue += `${i} `;
+            }
+        }
+        return returnValue;
+    }
+
+    function buzzIt() {
+        let output = "";
+        let val1 = document.getElementById("input1").value;
+        let val2 = document.getElementById("input2").value;
+        output = FizzBuzz(val1, val2);
+        document.getElementById("output1").innerHTML = output;
+
+    }
+</script>
+                                
+                                </code>
+</pre>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--prism js-->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-<pre class="line-numbers">
-<code class="language-js">
+    </div>
 
-    $("#btnpal").on("click", function () {
-    let word = $("#input1").val().tolowercase();
-    let reversedword = word.split("").reverse().join("");
-
-    if (word === reversedword) {
-        $("#output1").html(`the word <span class="palindrome">"${word}"</span> is a palindrome.`);
-    }
-    else {
-        $("#output1").html(`the word <span class="notpalindrome">"${word}"</span> is not a palindrome.`);
-    }
-
-    })
-    $("#btnclear").on("click", function () {
-    $("#input1").val("");
-    $("#output1").text("");
-    })
-
-</code>
-</pre>
-                </div>
-            </div>
-        </div>
-    
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="Scripts/prism.js"></script>
-
 </body>
 
 </html>
