@@ -17,6 +17,37 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <style>
+
+        .tacocatClass {
+            border: 2px solid black;
+            font-weight: 700;
+        }
+
+        .tacocatButton {
+            border: 2px solid black;
+            font-weight: 700;
+        }
+
+        .txtWide {
+            border: 2px solid black;
+            width: 100%;
+            margin-top: 10px;
+            align-content: flex-start;
+        }
+
+        .btnWide {
+            width: 100%;
+            margin-top: 10px;
+            align-content: center;
+        }
+
+        hr.Sep {
+            height: 0.2px;
+            background-color: black;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -55,42 +86,39 @@
 
     <!-- Page Content -->
     <div class="container">
-        <!--<div class="row">
+        <!--DESCRIPTION-->
+        <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">The Exercise</h1>
-                <p class="lead">This page will display your JS exercise</p>
-                <ul class="list-unstyled">
-                    <li>The Javascript Exercise</li>
-                    <li>Is placed on this page</li>
-                </ul>
-            </div>
-        </div>-->
-        <div class="container">
-            <div class="row">
-                <div class="col h1 text-center"> Palindrome Finder</div>
-            </div>
-            <hr />
-            <div class="row">
-                <div class="col-6">
-                    <input id="input1" class="txtWide" placeholder="What is the word?" />
-                </div>
-                <div class="col-6">
-                    <div id="output1" class="col"> </div>
-                </div>
-            </div>
-            <hr />
-            <div class="row">
-                <div class="col-6">
-                    <button id="btnPal" class="btn btn-primary txtWide"> Work </button>
-                </div>
-                <div class="col-6">
-                    <button id="btnClear" class="btn btn-warning txtWide"> Clear </button>
-                </div>
-
+                <h1 class="mt-5">TacocaT</h1>
+                <p class="lead">Description of the challenge</p>
             </div>
         </div>
+        <br />
+        <!----------------------------------------------------------------------------------->
+        <!--INPUT-->
+        <div class="row">
+            <div class="col"><input id="input1" class="form-control txtWide" placeholder="What is the word?" /></div>
+        </div>
+        <br />
+        <!--BUTTONS-->
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3"><button id="btnPal" class="btn btn-primary tacocatButton btnWide">Solve </button></div>
+            <div class="col-2"></div>
+            <div class="col-3"><button id="btnClear" class="btn btn-danger tacocatButton btnWide">Clear </button></div>
+            <div class="col-2"></div>
+        </div>
+        <hr class="Sep" />
+        <!----------------------------------------------------------------------------------->
+        <!--OUTPUT-->
+        <div class="row">
+            <div class="col"><h4 id="output1"></h4></div>
+        </div>
+
+
     </div>
 
+    
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
