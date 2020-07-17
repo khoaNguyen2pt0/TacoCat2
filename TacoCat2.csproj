@@ -71,6 +71,8 @@
     <Content Include="CSS\prism.css" />
     <Content Include="favicon.ico" />
     <Content Include="Index.html" />
+    <Content Include="kiwi_favicon.png" />
+    <Content Include="logo_kn.png" />
     <Content Include="Scripts\prism.js" />
     <Content Include="Solve.html" />
     <Content Include="tacocat.jpeg" />
