@@ -90,15 +90,21 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5">TacocaT</h1>
-                <p class="lead">Description of the challenge</p>
+                <p>
+                    The program will let you know if the word or phrase provided is a <strong>palindrome</strong> (a word, phrase that reads the same backward as forward).<br /> <em>e.g; "tacocat", "level", "kayak"  </em>
+                </p>
             </div>
         </div>
         <br />
         <!----------------------------------------------------------------------------------->
         <!--INPUT-->
+        
         <div class="row">
-            <div class="col"><input id="input1" class="form-control txtWide" placeholder="What is the word?" /></div>
+            <div class="col-2"></div>
+            <div class="col-8"><input id="input1" class="form-control txtWide" placeholder="word" onblur="this.placeholder='word'" onfocus="this.placeholder=''" /></div>
+            <div class="col-2"></div>
         </div>
+       
         <br />
         <!--BUTTONS-->
         <div class="row">
