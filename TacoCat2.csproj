@@ -69,13 +69,13 @@
   <ItemGroup>
     <Content Include="Code.html" />
     <Content Include="CSS\prism.css" />
+    <Content Include="tacocat.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="Index.html" />
     <Content Include="kiwi_favicon.png" />
     <Content Include="logo_kn.png" />
     <Content Include="Scripts\prism.js" />
     <Content Include="Solve.html" />
-    <Content Include="tacocat.jpeg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
